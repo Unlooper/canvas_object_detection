@@ -1,0 +1,39 @@
+{
+  "name": "Canvas-Object-Detection",
+  "version": "0.0.1",
+  "main": "demo/index.html",
+  "scripts": {
+    "serve": "gulp serve",
+    "build": "gulp build"
+  },
+  "description": "Detecting objects in a HTML5 Canvas component",
+  "keywords": [
+    "canvas",
+    "object",
+    "detection"
+  ],
+  "homepage": "https://github.com/Unlooper/canvas_object_detection/blob/master/README.md",
+  "author": {
+    "name": "Marco Caparrós",
+    "web": "http://unlooper.github.io",
+    "twitter": "@unlooper"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:unlooper/canvas_object_detection"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-task-listing": "^1.1.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.8",
+    "require-dir": "^1.1.0",
+    "run-sequence": "^2.2.1"
+  }
+}
