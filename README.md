@@ -1,2 +1,2 @@
-# canvas_object_detection
+# Canvas Object Detection
 Detecting object in canvas
