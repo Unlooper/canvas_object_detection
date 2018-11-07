@@ -3,6 +3,7 @@ import browserSync from 'browser-sync';
 
 const localConfig = {
   browserSyncOptions: {
+    baseDir: "./",
     server: 'demo',
     notify: false,
     port: 8080,
@@ -15,6 +16,13 @@ const localConfig = {
   }
 };
 
+gulp.task('js-watch', ['build'], function (done) {
+  browserSync.reload();
+  done();
+});
+
 gulp.task('serve', () => {
-  browserSync(localConfig.browserSyncOptions);
+  browserSync.create();
+  browserSync.init(localConfig.browserSyncOptions);
+  gulp.watch("src/*.js", ['js-watch']);
 });
