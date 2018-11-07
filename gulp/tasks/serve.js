@@ -1,5 +1,6 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
+import {paths} from '../paths';
 
 const localConfig = {
   browserSyncOptions: {
@@ -24,5 +25,5 @@ gulp.task('js-watch', ['build'], function (done) {
 gulp.task('serve', () => {
   browserSync.create();
   browserSync.init(localConfig.browserSyncOptions);
-  gulp.watch("src/*.js", ['js-watch']);
+  gulp.watch([`${paths.src}/*.js`, `${paths.demo}/*.html`, `${paths.demo}/*.css`], ['js-watch']);
 });
