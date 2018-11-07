@@ -1,14 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="max-height">
 <head>
 	<meta charset="utf-8">
 	<title>Unlooper - Canvas Object Detection demo</title>
 	<meta name="description" content="Unlooper - Canvas Object Detection demo">
 	<meta name="Unlooper" content="Unlooper - Canvas Object Detection demo">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="lib.js"></script>
 </head>
-<body>
-	Test
+<body onload="init()" class="max-height">
+	<div class="container-fluid max-height">
+		<h1>Canvas Object Detection</h1>
+		<div class="row max-height">
+			<div class="col-sm-2 no-padding">
+				<input type="file" id="file" name="file"/>
+			</div>
+			<div class="col-sm-10 canvas-container no-padding">
+				<canvas id="canvas" class="max-height"></canvas>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

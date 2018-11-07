@@ -7,7 +7,7 @@ import runSequence from 'run-sequence';
 
 gulp.task('build', (done) => {
   utils.log('Building project');
-  const buildTasks = ['clean', 'create-dist', 'create-min-dist'];
+  const buildTasks = ['clean-build', 'clean-demo', 'create-dist', 'create-min-dist'];
   buildTasks.push(done);
   runSequence(...buildTasks);
 });
