@@ -16,6 +16,7 @@ gulp.task('create-dist', () => {
   gulp.src(`${paths.src}/*.js`)
       .pipe(concat('lib.js'))
       .pipe(gulp.dest(`${paths.build}/`))
+      .pipe(gulp.dest(`${paths.demo}/`))
 });
 
 gulp.task('create-min-dist', () => {

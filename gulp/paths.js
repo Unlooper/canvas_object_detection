@@ -1,4 +1,5 @@
 export const paths = {
   src:  'src',
-  build: 'build'
+  build: 'build',
+  demo: 'demo'
 };
